@@ -1,0 +1,74 @@
+﻿/* Простые селекторы*/
+.video-container {
+    display: inline-block;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.navbar {
+    color: darkgray;
+    padding-left: 15%;
+}
+
+    .navbar :hover {
+        color: cyan;
+    }
+/*
+.font{
+    font-family : 'Times New Roman', Times, serif;
+
+}*/
+header, footer, aside, body, .navbar, .video-container {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*header {
+    padding-left: 1%;
+    padding-top: 1.2%;
+}*/
+header {
+    color: black;
+    padding-left: 1%;
+    padding-top: 1.2%;
+}
+
+#header-index {
+    color: chartreuse;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: medium;
+    color: dimgrey;
+    line-height: 70%;
+    padding-left: 0%;
+}
+
+aside {
+    height: 100%; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
+    width: 10%;
+    position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
+    z-index: 1; /* Сайд-бар будет поверх остальных элементов */
+    top: 0; /* Сайдбар будет в самой верхней части страницы */
+    left: 0;
+    background-color: #111; /* Черный цвет фона (задан в виде кода) */
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    padding-top: 2%;
+    font-size: large;
+}
+
+body {
+    padding-left: 11%;
+}
+
+header, footer, body, .video-container {
+    background-color: linen;
+    /*background-color: rgba(0, 0, 255, 0.2);*/
+}
+
+.SearchInput:focus {
+    border: 1px solid; /* Рамка при получении фокуса */
+    background-color: red;
+    color: blue;
+}
