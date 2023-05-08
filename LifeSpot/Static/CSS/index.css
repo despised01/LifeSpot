@@ -14,7 +14,7 @@
     color:darkcyan;
 }
 
-header, footer, aside, body, .navbar, .video-container {
+header, footer, aside, body, .navbar, .video-container, .searchInput {
     font-family: "Helvetica 65 Medium", sans-serif;
 }
 
@@ -58,8 +58,8 @@ header, footer, body, .video-container {
     background-color: #faf0e6; /*linen*/
 }
 
-.searchInput:focus { 
-    border: 0.5px solid; 
+.searchInput:focus {
+    border: 0.5px solid;
     background-color: whitesmoke;
-    color: darkseagreen;
+    color: #1c1b1b;
 }
