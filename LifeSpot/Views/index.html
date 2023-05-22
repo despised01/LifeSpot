@@ -5,15 +5,17 @@
     <title>LifeSpot</title>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
     <script src="../Static/JS/index.js"></script>
-    
+    <script defer>handleSession(); sessionLog()</script>
+    <script>setTimeout(() => alert("Подпишитесь на наш Чтотограмм"), 60000)</script>
+</head>
+
 </head>
 <body>
     <header id="header-index">
-        <!--Заголовок страницы-->
         <h1>LifeSpot - прямые трансляции с улиц</h1>
-        <!--Параграф-->
         <p>Покажем, что происходит прямо сейчас</p>
     </header>
+
     <!--Сайд-бар страницы-->
     <aside id="sidebar">
         <div class="navbar">
@@ -22,10 +24,12 @@
         </div>
     </aside>
     <div class="bordered">
-        <!--Параграф-->
+
         <p>
             <b>Поиск:</b><br>
-            <input class="searchInput" type ="text"  size="40">
+            <input type="text" oninput="
+            filtarionContentByInputFunction();
+            " size=50%>
         </p>
 
         <div class="video-container">
